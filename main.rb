@@ -1,3 +1,5 @@
+require_relative 'lib/game.rb'
+
 ASCII_ART= ['''
  +----+
   |   |
@@ -59,7 +61,10 @@ file.each do |el|
   end
 end
 
-puts words
+hangman = Game.new(words)
+
+secret_word = hangman.create_secret_word
+puts secret_word
 
 
 
