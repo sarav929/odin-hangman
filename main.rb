@@ -65,8 +65,9 @@ end
 hangman = Game.new(words, 0)
 
 secret_word = hangman.create_secret_word
-hangman.make_guess
-hangman.check_guess(ASCII_ART)
+hangman.play(ASCII_ART)
+  
+
 
 
 
